@@ -16,7 +16,7 @@ class QuizTaker:
         for block in blocks:
             lines = block.strip().split("\n")
             if len(lines) < 6:
-                continue  # skip incomplete blocks
+                continue  
 
             question_text = lines[0].split(": ", 1)[1].strip()
             choice_a = lines[1][3:].strip()
